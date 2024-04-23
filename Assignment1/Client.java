@@ -13,6 +13,7 @@ public class Client {
             Scanner inp=new Scanner(System.in);
             System.out.print("Enter the radius of the circle: ");
             radius=inp.nextInt();
+            inp.close();
             System.out.println("\nThe Area of the circle is "+circle.getArea(radius));
             System.out.println("The Perimeter of the circle is "+circle.getPerimeter(radius));
         } 
@@ -21,4 +22,4 @@ public class Client {
             System.out.println("Client Error: " + e);
         }
     }
- }
+}

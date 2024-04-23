@@ -14,15 +14,10 @@ public class Server
     {
         try 
         {
-        // create and initialize the orb
             ORBorb = ORB.init(args, null);
-            // get reference to rootPOA
             POArootPOA =POAHelper.narrow(orb.resolve_initial_references("RootPOA"));
-            // activate the POAManager
             rootPOA.the_POAManager().activate();
-            // create servant and register it with the ORB
             CalculatorImpl calculator = new CalculatorImpl(orb);
-            // get object reference from the servant
             org.omg.CORBA.Object ref = rootPOA.servant_to_reference(calculator);
             Calculator href = CalculatorHelper.narrow(ref);
             org.omg.CORBA.Object objRef = orb.resolve_initial_references("NameService");

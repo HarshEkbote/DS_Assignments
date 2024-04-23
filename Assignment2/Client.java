@@ -33,24 +33,20 @@ public class Client {
                 System.out.print("Enter second no: ");
                 double y = sc.nextDouble();
                 if (choice == 1) {
-                    System.out.println("Ans = " + x + " + " + y + " = " +
-                    calculator.add(x, y));
-                    calculator.subtract(x, y));
-                    calculator.multiply(x, y));
-                    calculator.divide(x, y));
+                    System.out.println("Ans = " + x + " + " + y + " = " +calculator.add(x, y));
                 }
-            } 
-            else if (choice == 2) 
-            {
-                System.out.println("Ans = " + x + "- " + y + " = " +
-            } 
-            else if (choice == 3) {
-                System.out.println("Ans = " + x + " * " + y + " = " +
-            } 
-            else if (choice == 4) {
-                System.out.println("Ans = " + x + " / " + y + " = " +
+                else if (choice == 2) 
+                {
+                    System.out.println("Ans = " + x + "- " + y + " = " +calculator.subtract(x, y));
+                } 
+                else if (choice == 3) {
+                    System.out.println("Ans = " + x + " * " + y + " = " +calculator.multiply(x, y));
+                } 
+                else if (choice == 4) {
+                    System.out.println("Ans = " + x + " / " + y + " = " +calculator.divide(x, y));
+                }
+                System.out.println("---------------------------------------------------\n");
             }
-            System.out.println("---------------------------------------------------\n");
             sc.close();
         } 
         catch (Exception e) 

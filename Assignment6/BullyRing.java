@@ -117,7 +117,6 @@ public class BullyRing {
     public static void main(String[] args) {
 
         BullyRing bully = new BullyRing();
-
         bully.ring();
         bully.performElection();
     }

@@ -2,6 +2,7 @@ package Assignment4;
 
 import java.text.*;
 import java.util.*;
+
 public class BerkelyAlgorithm 
 {
     public static void main(String[] args) throws ParseException 
@@ -25,7 +26,7 @@ public class BerkelyAlgorithm
             timeString[i] = appendCurrentDateToTime(time);
         }
         System.out.println("\nBefore Synchronization");
-        displayTime(timeString, "");
+        displayTime(timeString,"");
         berkeleyAlgorithm(timeString);
         System.out.println("\nAfter Synchronization");
         displayTime(timeString, "Synchronized ");
